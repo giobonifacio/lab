@@ -1,0 +1,10 @@
+com\labforwardtask\lab\dao\impl\ItemDAOImplTest.class
+com\labforwardtask\lab\util\ItemTestUtil.class
+com\labforwardtask\lab\dto\mapper\CategoryMapperTest.class
+com\labforwardtask\lab\ListItemsApplicationTests.class
+com\labforwardtask\lab\util\AttributeDefinitionTestUtil.class
+com\labforwardtask\lab\dto\mapper\AttributeDefinitionMapperTest.class
+com\labforwardtask\lab\util\CategoryTestUtil.class
+com\labforwardtask\lab\dto\mapper\ItemMapperTest.class
+com\labforwardtask\lab\dao\impl\CategoryDAOImplTest.class
+com\labforwardtask\lab\service\LabServiceTest.class
