@@ -59,7 +59,12 @@ I decided to use a NoSQL database given the flexibility that it provides
 considering that users would dynamically define attributes for categories, and the items would then need to meet those attributes criteria in order to be added to a category.
 </br></br>
 
+The basic project structure is as follows
+![alt text](src/main/resources/Lab%20Application%20structure.png)
+</br></br>
+
 A Trello board was created to help with a to-do list. The trello board can be seen on https://trello.com/invite/b/isCpdIOX/f361ed39f679a5edc226e75d4ad7568c/labforward-lab-items-list </br></br>
+
 
 
 <!-- Usage -->
