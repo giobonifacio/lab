@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "1f5f22aa-c413-4165-95a3-ecc5a4eeaa5c",
+		"name": "Lab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "insert category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"first real cat\",\r\n    \"name\": \"this is the first real cat\",\r\n    \"attributeDefinitions\": [\r\n        {\r\n            \"key\": \"keyattr1\",\r\n            \"description\": \"aaa\",\r\n            \"required\": \"true\",\r\n            \"shouldCheckType\": \"false\",\r\n            \"type\": \"String\"\r\n        },\r\n        {\r\n            \"key\": \"keyattr2\",\r\n            \"description\": \"bbbb\",\r\n            \"required\": \"false\",\r\n            \"shouldCheckType\": \"true\",\r\n            \"type\": \"String\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/lab/category",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"lab",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert Item",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryId\": \"601db4924570b56443071f59\",\r\n    \"itemAttributes\": \r\n        {\r\n            \"keyattr1\": \"1111\",\r\n            \"keyattr2\": \"2222\",\r\n            \"randomAttr\": \"555555\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/lab/item",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"lab",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Item",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryId\": \"601db4924570b56443071f59\",\r\n    \"id\": \"601dc00a1966d55b65d8f839\",\r\n    \"itemAttributes\": \r\n        {\r\n            \"keyattr1\": \"UPDATED\",\r\n            \"keyattr2\": \"---\",\r\n            \"randomAttr\": \"UPDATED\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/lab/item/{id}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"lab",
+						"item",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "erase All categories",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"name\": \"cat 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/lab/category",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"lab",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get items from category Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/lab/category/601dc59c06fba2686995ef6a/item",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"lab",
+						"category",
+						"601dc59c06fba2686995ef6a",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/lab/category",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"lab",
+						"category"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
