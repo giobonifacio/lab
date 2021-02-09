@@ -22,7 +22,7 @@ This assignment creates an API to enable scientits to create its own categories 
     </li>
     <li><a href="#considerations">Considerations</a></li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#Additional Features">Additional Features</a></li>
+    <li><a href="#AdditionalFeatures">Additional Features</a></li>
   </ol>
 </details>
 
@@ -74,7 +74,7 @@ A Postman collection was added to the resources folder to help out testing the A
 
 
 <!-- Additional Features -->
-## Additional Features
+## AdditionalFeatures
 There are several features that would improve this solution and that I would work on have I had more time to do so. Those features can be found at the Trello Board and they include:
 * Create a docker container for the application embedded with a MongoDB Server.
 * Add Security and Authentication layer to the application
